@@ -1,24 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7E334988-13D0-4514-AA06-9073337D4269}"
 	ProjectSection(SolutionItems) = preProject
 		FXCop.ruleset = FXCop.ruleset
 		Settings.StyleCop = Settings.StyleCop
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgHolidays", "ArgHolidays\ArgHolidays.csproj", "{A4E58FEC-809F-4143-92D4-B6A9EB4994C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgHolidays", "src\ArgHolidays\ArgHolidays.csproj", "{A4E58FEC-809F-4143-92D4-B6A9EB4994C0}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://aldebaran:8080/tfs/legacycollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ArgHolidays\\ArgHolidays.csproj
-		SccProjectName1 = ArgHolidays
-		SccLocalPath1 = ArgHolidays
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -31,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04B17EC9-3A8E-42E5-9207-66B8E2ED2EF9}
 	EndGlobalSection
 EndGlobal
