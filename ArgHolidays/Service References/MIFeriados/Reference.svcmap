@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ce1ac49f-8cb5-47fa-b2c9-8b39c11ce57e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://webservices.mininterior.gov.ar/feriados/Service.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FeriadoDS.xsd" MetadataType="Schema" ID="533b23c3-7c00-468d-ba56-24f87358d583" SourceId="1" SourceUrl="http://webservices.mininterior.gov.ar/Feriados/Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="0acedfa0-9efd-4373-8a51-bd682aa6c924" SourceId="1" SourceUrl="http://webservices.mininterior.gov.ar/Feriados/Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="233ce539-9059-49c0-885d-a198b54dc584" SourceId="1" SourceUrl="http://webservices.mininterior.gov.ar/Feriados/Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="69244522-b0fc-4f5e-aed3-1f49f057de4f" SourceId="1" SourceUrl="http://webservices.mininterior.gov.ar/Feriados/Service.svc?xsd=xsd3" />
+    <MetadataFile FileName="MyService.wsdl" MetadataType="Wsdl" ID="b8f6adb2-438f-400d-900b-0ab0e8bd8b87" SourceId="1" SourceUrl="http://webservices.mininterior.gov.ar/Feriados/Service.svc?wsdl" />
+    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="fe987837-d997-4754-982a-c9e8b7dc2913" SourceId="1" SourceUrl="http://webservices.mininterior.gov.ar/Feriados/Service.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
