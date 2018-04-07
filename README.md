@@ -12,7 +12,7 @@ The source code was initially hosted in a TFS 2008. Later migrated to Visual Stu
 
 ## Screenshot
 
-[https://raw.githubusercontent.com/mamcer/arg-holidays/master/doc/screenshot.png]()
+![screenshot](https://raw.githubusercontent.com/mamcer/arg-holidays/master/doc/screenshot.png)
 
 ## Technologies
 
