@@ -1,5 +1,4 @@
-﻿using System;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Windows.Forms;
 
 namespace ArgHolidays
@@ -16,8 +15,6 @@ namespace ArgHolidays
             labelCompanyName.Text = AssemblyCompany;
             textBoxDescription.Text = AssemblyDescription;
         }
-
-        #region Assembly Attribute Accessors
 
         public string AssemblyTitle
         {
@@ -37,13 +34,7 @@ namespace ArgHolidays
             }
         }
 
-        public string AssemblyVersion
-        {
-            get
-            {
-                return Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            }
-        }
+        public string AssemblyVersion => Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
         public string AssemblyDescription
         {
@@ -100,7 +91,5 @@ namespace ArgHolidays
                 return ((AssemblyCompanyAttribute)attributes[0]).Company;
             }
         }
-
-        #endregion
     }
 }
