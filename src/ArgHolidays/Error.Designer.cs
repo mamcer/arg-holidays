@@ -36,74 +36,72 @@ namespace ArgHolidays
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Error));
-            txtError = new System.Windows.Forms.TextBox();
-            lnkCopyToClipboard = new System.Windows.Forms.LinkLabel();
-            btnOk = new System.Windows.Forms.Button();
-            SuspendLayout();
+            this.txtError = new System.Windows.Forms.TextBox();
+            this.lnkCopyToClipboard = new System.Windows.Forms.LinkLabel();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // txtError
             // 
-            txtError.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtError.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            txtError.BackColor = System.Drawing.SystemColors.Window;
-            txtError.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            txtError.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            txtError.Location = new System.Drawing.Point(0, 0);
-            txtError.Multiline = true;
-            txtError.Name = "txtError";
-            txtError.ReadOnly = true;
-            txtError.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            txtError.Size = new System.Drawing.Size(635, 269);
-            txtError.TabIndex = 0;
-            txtError.WordWrap = false;
+            this.txtError.BackColor = System.Drawing.SystemColors.Window;
+            this.txtError.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtError.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtError.Location = new System.Drawing.Point(0, 0);
+            this.txtError.Multiline = true;
+            this.txtError.Name = "txtError";
+            this.txtError.ReadOnly = true;
+            this.txtError.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtError.Size = new System.Drawing.Size(635, 269);
+            this.txtError.TabIndex = 0;
+            this.txtError.WordWrap = false;
             // 
             // lnkCopyToClipboard
             // 
-            lnkCopyToClipboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            lnkCopyToClipboard.AutoSize = true;
-            lnkCopyToClipboard.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lnkCopyToClipboard.LinkColor = System.Drawing.Color.DarkSlateBlue;
-            lnkCopyToClipboard.Location = new System.Drawing.Point(-1, 272);
-            lnkCopyToClipboard.Name = "lnkCopyToClipboard";
-            lnkCopyToClipboard.Size = new System.Drawing.Size(114, 17);
-            lnkCopyToClipboard.TabIndex = 1;
-            lnkCopyToClipboard.TabStop = true;
-            lnkCopyToClipboard.Text = "Copy to clipboard";
-            lnkCopyToClipboard.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(LnkCopyToClipboard_LinkClicked);
+            this.lnkCopyToClipboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lnkCopyToClipboard.AutoSize = true;
+            this.lnkCopyToClipboard.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkCopyToClipboard.LinkColor = System.Drawing.Color.DarkSlateBlue;
+            this.lnkCopyToClipboard.Location = new System.Drawing.Point(-1, 272);
+            this.lnkCopyToClipboard.Name = "lnkCopyToClipboard";
+            this.lnkCopyToClipboard.Size = new System.Drawing.Size(99, 13);
+            this.lnkCopyToClipboard.TabIndex = 1;
+            this.lnkCopyToClipboard.TabStop = true;
+            this.lnkCopyToClipboard.Text = "Copy to clipboard";
+            this.lnkCopyToClipboard.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkCopyToClipboard_LinkClicked);
             // 
             // btnOk
             // 
-            btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            btnOk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btnOk.Location = new System.Drawing.Point(550, 281);
-            btnOk.Name = "btnOk";
-            btnOk.Size = new System.Drawing.Size(75, 23);
-            btnOk.TabIndex = 2;
-            btnOk.Text = "Ok";
-            btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnOk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOk.Location = new System.Drawing.Point(550, 281);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(75, 23);
+            this.btnOk.TabIndex = 2;
+            this.btnOk.Text = "Ok";
+            this.btnOk.UseVisualStyleBackColor = true;
             // 
             // Error
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackColor = System.Drawing.SystemColors.Control;
-            ClientSize = new System.Drawing.Size(635, 314);
-            Controls.Add(btnOk);
-            Controls.Add(lnkCopyToClipboard);
-            Controls.Add(txtError);
-            Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
-            MinimizeBox = false;
-            Name = "Error";
-            ShowInTaskbar = false;
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Something Went Wrong";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(635, 314);
+            this.Controls.Add(this.btnOk);
+            this.Controls.Add(this.lnkCopyToClipboard);
+            this.Controls.Add(this.txtError);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimizeBox = false;
+            this.Name = "Error";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Something Went Wrong";
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
