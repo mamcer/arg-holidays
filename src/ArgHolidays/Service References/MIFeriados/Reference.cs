@@ -46,48 +46,48 @@ namespace ArgHolidays.MIFeriados {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public FeriadoDS() {
-            this.BeginInit();
-            this.InitClass();
-            global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
+            BeginInit();
+            InitClass();
+            global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(SchemaChanged);
             base.Tables.CollectionChanged += schemaChangedHandler;
             base.Relations.CollectionChanged += schemaChangedHandler;
-            this.EndInit();
+            EndInit();
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected FeriadoDS(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
-            if ((this.IsBinarySerialized(info, context) == true)) {
-                this.InitVars(false);
-                global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler1 = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
-                this.Tables.CollectionChanged += schemaChangedHandler1;
-                this.Relations.CollectionChanged += schemaChangedHandler1;
+            if ((IsBinarySerialized(info, context) == true)) {
+                InitVars(false);
+                global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler1 = new global::System.ComponentModel.CollectionChangeEventHandler(SchemaChanged);
+                Tables.CollectionChanged += schemaChangedHandler1;
+                Relations.CollectionChanged += schemaChangedHandler1;
                 return;
             }
             string strSchema = ((string)(info.GetValue("XmlSchema", typeof(string))));
-            if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
+            if ((DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
                 if ((ds.Tables["Feriado"] != null)) {
                     base.Tables.Add(new FeriadoDataTable(ds.Tables["Feriado"]));
                 }
-                this.DataSetName = ds.DataSetName;
-                this.Prefix = ds.Prefix;
-                this.Namespace = ds.Namespace;
-                this.Locale = ds.Locale;
-                this.CaseSensitive = ds.CaseSensitive;
-                this.EnforceConstraints = ds.EnforceConstraints;
-                this.Merge(ds, false, global::System.Data.MissingSchemaAction.Add);
-                this.InitVars();
+                DataSetName = ds.DataSetName;
+                Prefix = ds.Prefix;
+                Namespace = ds.Namespace;
+                Locale = ds.Locale;
+                CaseSensitive = ds.CaseSensitive;
+                EnforceConstraints = ds.EnforceConstraints;
+                Merge(ds, false, global::System.Data.MissingSchemaAction.Add);
+                InitVars();
             }
             else {
-                this.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
+                ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
             }
-            this.GetSerializationData(info, context);
-            global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
+            GetSerializationData(info, context);
+            global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(SchemaChanged);
             base.Tables.CollectionChanged += schemaChangedHandler;
-            this.Relations.CollectionChanged += schemaChangedHandler;
+            Relations.CollectionChanged += schemaChangedHandler;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -96,7 +96,7 @@ namespace ArgHolidays.MIFeriados {
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public FeriadoDataTable Feriado {
             get {
-                return this.tableFeriado;
+                return tableFeriado;
             }
         }
         
@@ -106,10 +106,10 @@ namespace ArgHolidays.MIFeriados {
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
             get {
-                return this._schemaSerializationMode;
+                return _schemaSerializationMode;
             }
             set {
-                this._schemaSerializationMode = value;
+                _schemaSerializationMode = value;
             }
         }
         
@@ -134,9 +134,9 @@ namespace ArgHolidays.MIFeriados {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected override void InitializeDerivedDataSet() {
-            this.BeginInit();
-            this.InitClass();
-            this.EndInit();
+            BeginInit();
+            InitClass();
+            EndInit();
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -144,7 +144,7 @@ namespace ArgHolidays.MIFeriados {
         public override global::System.Data.DataSet Clone() {
             FeriadoDS cln = ((FeriadoDS)(base.Clone()));
             cln.InitVars();
-            cln.SchemaSerializationMode = this.SchemaSerializationMode;
+            cln.SchemaSerializationMode = SchemaSerializationMode;
             return cln;
         }
         
@@ -163,25 +163,25 @@ namespace ArgHolidays.MIFeriados {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected override void ReadXmlSerializable(global::System.Xml.XmlReader reader) {
-            if ((this.DetermineSchemaSerializationMode(reader) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
-                this.Reset();
+            if ((DetermineSchemaSerializationMode(reader) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
+                Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
                 if ((ds.Tables["Feriado"] != null)) {
                     base.Tables.Add(new FeriadoDataTable(ds.Tables["Feriado"]));
                 }
-                this.DataSetName = ds.DataSetName;
-                this.Prefix = ds.Prefix;
-                this.Namespace = ds.Namespace;
-                this.Locale = ds.Locale;
-                this.CaseSensitive = ds.CaseSensitive;
-                this.EnforceConstraints = ds.EnforceConstraints;
-                this.Merge(ds, false, global::System.Data.MissingSchemaAction.Add);
-                this.InitVars();
+                DataSetName = ds.DataSetName;
+                Prefix = ds.Prefix;
+                Namespace = ds.Namespace;
+                Locale = ds.Locale;
+                CaseSensitive = ds.CaseSensitive;
+                EnforceConstraints = ds.EnforceConstraints;
+                Merge(ds, false, global::System.Data.MissingSchemaAction.Add);
+                InitVars();
             }
             else {
-                this.ReadXml(reader);
-                this.InitVars();
+                ReadXml(reader);
+                InitVars();
             }
         }
         
@@ -189,7 +189,7 @@ namespace ArgHolidays.MIFeriados {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected override global::System.Xml.Schema.XmlSchema GetSchemaSerializable() {
             global::System.IO.MemoryStream stream = new global::System.IO.MemoryStream();
-            this.WriteXmlSchema(new global::System.Xml.XmlTextWriter(stream, null));
+            WriteXmlSchema(new global::System.Xml.XmlTextWriter(stream, null));
             stream.Position = 0;
             return global::System.Xml.Schema.XmlSchema.Read(new global::System.Xml.XmlTextReader(stream), null);
         }
@@ -197,16 +197,16 @@ namespace ArgHolidays.MIFeriados {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars() {
-            this.InitVars(true);
+            InitVars(true);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableFeriado = ((FeriadoDataTable)(base.Tables["Feriado"]));
+            tableFeriado = ((FeriadoDataTable)(base.Tables["Feriado"]));
             if ((initTable == true)) {
-                if ((this.tableFeriado != null)) {
-                    this.tableFeriado.InitVars();
+                if ((tableFeriado != null)) {
+                    tableFeriado.InitVars();
                 }
             }
         }
@@ -214,13 +214,13 @@ namespace ArgHolidays.MIFeriados {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "FeriadoDS";
-            this.Prefix = "";
-            this.Namespace = "http://tempuri.org/FeriadoDS.xsd";
-            this.EnforceConstraints = true;
-            this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableFeriado = new FeriadoDataTable();
-            base.Tables.Add(this.tableFeriado);
+            DataSetName = "FeriadoDS";
+            Prefix = "";
+            Namespace = "http://tempuri.org/FeriadoDS.xsd";
+            EnforceConstraints = true;
+            SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
+            tableFeriado = new FeriadoDataTable();
+            base.Tables.Add(tableFeriado);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -233,7 +233,7 @@ namespace ArgHolidays.MIFeriados {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
-                this.InitVars();
+                InitVars();
             }
         }
         
@@ -313,41 +313,41 @@ namespace ArgHolidays.MIFeriados {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public FeriadoDataTable() {
-                this.TableName = "Feriado";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
+                TableName = "Feriado";
+                BeginInit();
+                InitClass();
+                EndInit();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal FeriadoDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
+                TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
+                    CaseSensitive = table.CaseSensitive;
                 }
                 if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
+                    Locale = table.Locale;
                 }
                 if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
+                    Namespace = table.Namespace;
                 }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
+                Prefix = table.Prefix;
+                MinimumCapacity = table.MinimumCapacity;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected FeriadoDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
-                this.InitVars();
+                InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn IDColumn {
                 get {
-                    return this.columnID;
+                    return columnID;
                 }
             }
             
@@ -355,7 +355,7 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn FechaOrigenColumn {
                 get {
-                    return this.columnFechaOrigen;
+                    return columnFechaOrigen;
                 }
             }
             
@@ -363,7 +363,7 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn FechaEfectivaColumn {
                 get {
-                    return this.columnFechaEfectiva;
+                    return columnFechaEfectiva;
                 }
             }
             
@@ -371,7 +371,7 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn NombreColumn {
                 get {
-                    return this.columnNombre;
+                    return columnNombre;
                 }
             }
             
@@ -379,7 +379,7 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn DescripcionColumn {
                 get {
-                    return this.columnDescripcion;
+                    return columnDescripcion;
                 }
             }
             
@@ -387,7 +387,7 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn TrasladableColumn {
                 get {
-                    return this.columnTrasladable;
+                    return columnTrasladable;
                 }
             }
             
@@ -395,7 +395,7 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn TipoNombreColumn {
                 get {
-                    return this.columnTipoNombre;
+                    return columnTipoNombre;
                 }
             }
             
@@ -403,7 +403,7 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn TipoDescripcionColumn {
                 get {
-                    return this.columnTipoDescripcion;
+                    return columnTipoDescripcion;
                 }
             }
             
@@ -412,7 +412,7 @@ namespace ArgHolidays.MIFeriados {
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
-                    return this.Rows.Count;
+                    return Rows.Count;
                 }
             }
             
@@ -420,7 +420,7 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public FeriadoRow this[int index] {
                 get {
-                    return ((FeriadoRow)(this.Rows[index]));
+                    return ((FeriadoRow)(Rows[index]));
                 }
             }
             
@@ -439,13 +439,13 @@ namespace ArgHolidays.MIFeriados {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddFeriadoRow(FeriadoRow row) {
-                this.Rows.Add(row);
+                Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public FeriadoRow AddFeriadoRow(int ID, System.DateTime FechaOrigen, System.DateTime FechaEfectiva, string Nombre, string Descripcion, bool Trasladable, string TipoNombre, string TipoDescripcion) {
-                FeriadoRow rowFeriadoRow = ((FeriadoRow)(this.NewRow()));
+                FeriadoRow rowFeriadoRow = ((FeriadoRow)(NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID,
                         FechaOrigen,
@@ -456,14 +456,14 @@ namespace ArgHolidays.MIFeriados {
                         TipoNombre,
                         TipoDescripcion};
                 rowFeriadoRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowFeriadoRow);
+                Rows.Add(rowFeriadoRow);
                 return rowFeriadoRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public FeriadoRow FindByID(int ID) {
-                return ((FeriadoRow)(this.Rows.Find(new object[] {
+                return ((FeriadoRow)(Rows.Find(new object[] {
                             ID})));
             }
             
@@ -484,58 +484,58 @@ namespace ArgHolidays.MIFeriados {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnID = base.Columns["ID"];
-                this.columnFechaOrigen = base.Columns["FechaOrigen"];
-                this.columnFechaEfectiva = base.Columns["FechaEfectiva"];
-                this.columnNombre = base.Columns["Nombre"];
-                this.columnDescripcion = base.Columns["Descripcion"];
-                this.columnTrasladable = base.Columns["Trasladable"];
-                this.columnTipoNombre = base.Columns["TipoNombre"];
-                this.columnTipoDescripcion = base.Columns["TipoDescripcion"];
+                columnID = base.Columns["ID"];
+                columnFechaOrigen = base.Columns["FechaOrigen"];
+                columnFechaEfectiva = base.Columns["FechaEfectiva"];
+                columnNombre = base.Columns["Nombre"];
+                columnDescripcion = base.Columns["Descripcion"];
+                columnTrasladable = base.Columns["Trasladable"];
+                columnTipoNombre = base.Columns["TipoNombre"];
+                columnTipoDescripcion = base.Columns["TipoDescripcion"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnID);
-                this.columnFechaOrigen = new global::System.Data.DataColumn("FechaOrigen", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFechaOrigen);
-                this.columnFechaEfectiva = new global::System.Data.DataColumn("FechaEfectiva", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFechaEfectiva);
-                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombre);
-                this.columnDescripcion = new global::System.Data.DataColumn("Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDescripcion);
-                this.columnTrasladable = new global::System.Data.DataColumn("Trasladable", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTrasladable);
-                this.columnTipoNombre = new global::System.Data.DataColumn("TipoNombre", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTipoNombre);
-                this.columnTipoDescripcion = new global::System.Data.DataColumn("TipoDescripcion", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTipoDescripcion);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnID}, true));
-                this.columnID.AllowDBNull = false;
-                this.columnID.Unique = true;
-                this.columnFechaOrigen.AllowDBNull = false;
-                this.columnFechaEfectiva.AllowDBNull = false;
-                this.columnNombre.AllowDBNull = false;
-                this.columnNombre.MaxLength = 50;
-                this.columnDescripcion.AllowDBNull = false;
-                this.columnDescripcion.MaxLength = 100;
-                this.columnTrasladable.AllowDBNull = false;
-                this.columnTipoNombre.AllowDBNull = false;
-                this.columnTipoNombre.Caption = "FeriadoTipoNombre";
-                this.columnTipoNombre.MaxLength = 50;
-                this.columnTipoDescripcion.AllowDBNull = false;
-                this.columnTipoDescripcion.Caption = "FeriadoTipoDescripcion";
-                this.columnTipoDescripcion.MaxLength = 100;
+                columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(columnID);
+                columnFechaOrigen = new global::System.Data.DataColumn("FechaOrigen", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(columnFechaOrigen);
+                columnFechaEfectiva = new global::System.Data.DataColumn("FechaEfectiva", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(columnFechaEfectiva);
+                columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(columnNombre);
+                columnDescripcion = new global::System.Data.DataColumn("Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(columnDescripcion);
+                columnTrasladable = new global::System.Data.DataColumn("Trasladable", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(columnTrasladable);
+                columnTipoNombre = new global::System.Data.DataColumn("TipoNombre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(columnTipoNombre);
+                columnTipoDescripcion = new global::System.Data.DataColumn("TipoDescripcion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(columnTipoDescripcion);
+                Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                columnID}, true));
+                columnID.AllowDBNull = false;
+                columnID.Unique = true;
+                columnFechaOrigen.AllowDBNull = false;
+                columnFechaEfectiva.AllowDBNull = false;
+                columnNombre.AllowDBNull = false;
+                columnNombre.MaxLength = 50;
+                columnDescripcion.AllowDBNull = false;
+                columnDescripcion.MaxLength = 100;
+                columnTrasladable.AllowDBNull = false;
+                columnTipoNombre.AllowDBNull = false;
+                columnTipoNombre.Caption = "FeriadoTipoNombre";
+                columnTipoNombre.MaxLength = 50;
+                columnTipoDescripcion.AllowDBNull = false;
+                columnTipoDescripcion.Caption = "FeriadoTipoDescripcion";
+                columnTipoDescripcion.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public FeriadoRow NewFeriadoRow() {
-                return ((FeriadoRow)(this.NewRow()));
+                return ((FeriadoRow)(NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -554,8 +554,8 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.FeriadoRowChanged != null)) {
-                    this.FeriadoRowChanged(this, new FeriadoRowChangeEvent(((FeriadoRow)(e.Row)), e.Action));
+                if ((FeriadoRowChanged != null)) {
+                    FeriadoRowChanged(this, new FeriadoRowChangeEvent(((FeriadoRow)(e.Row)), e.Action));
                 }
             }
             
@@ -563,8 +563,8 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.FeriadoRowChanging != null)) {
-                    this.FeriadoRowChanging(this, new FeriadoRowChangeEvent(((FeriadoRow)(e.Row)), e.Action));
+                if ((FeriadoRowChanging != null)) {
+                    FeriadoRowChanging(this, new FeriadoRowChangeEvent(((FeriadoRow)(e.Row)), e.Action));
                 }
             }
             
@@ -572,8 +572,8 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.FeriadoRowDeleted != null)) {
-                    this.FeriadoRowDeleted(this, new FeriadoRowChangeEvent(((FeriadoRow)(e.Row)), e.Action));
+                if ((FeriadoRowDeleted != null)) {
+                    FeriadoRowDeleted(this, new FeriadoRowChangeEvent(((FeriadoRow)(e.Row)), e.Action));
                 }
             }
             
@@ -581,15 +581,15 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.FeriadoRowDeleting != null)) {
-                    this.FeriadoRowDeleting(this, new FeriadoRowChangeEvent(((FeriadoRow)(e.Row)), e.Action));
+                if ((FeriadoRowDeleting != null)) {
+                    FeriadoRowDeleting(this, new FeriadoRowChangeEvent(((FeriadoRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void RemoveFeriadoRow(FeriadoRow row) {
-                this.Rows.Remove(row);
+                Rows.Remove(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -667,17 +667,17 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal FeriadoRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableFeriado = ((FeriadoDataTable)(this.Table));
+                tableFeriado = ((FeriadoDataTable)(Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int ID {
                 get {
-                    return ((int)(this[this.tableFeriado.IDColumn]));
+                    return ((int)(this[tableFeriado.IDColumn]));
                 }
                 set {
-                    this[this.tableFeriado.IDColumn] = value;
+                    this[tableFeriado.IDColumn] = value;
                 }
             }
             
@@ -685,10 +685,10 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime FechaOrigen {
                 get {
-                    return ((global::System.DateTime)(this[this.tableFeriado.FechaOrigenColumn]));
+                    return ((global::System.DateTime)(this[tableFeriado.FechaOrigenColumn]));
                 }
                 set {
-                    this[this.tableFeriado.FechaOrigenColumn] = value;
+                    this[tableFeriado.FechaOrigenColumn] = value;
                 }
             }
             
@@ -696,10 +696,10 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime FechaEfectiva {
                 get {
-                    return ((global::System.DateTime)(this[this.tableFeriado.FechaEfectivaColumn]));
+                    return ((global::System.DateTime)(this[tableFeriado.FechaEfectivaColumn]));
                 }
                 set {
-                    this[this.tableFeriado.FechaEfectivaColumn] = value;
+                    this[tableFeriado.FechaEfectivaColumn] = value;
                 }
             }
             
@@ -707,10 +707,10 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Nombre {
                 get {
-                    return ((string)(this[this.tableFeriado.NombreColumn]));
+                    return ((string)(this[tableFeriado.NombreColumn]));
                 }
                 set {
-                    this[this.tableFeriado.NombreColumn] = value;
+                    this[tableFeriado.NombreColumn] = value;
                 }
             }
             
@@ -718,10 +718,10 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Descripcion {
                 get {
-                    return ((string)(this[this.tableFeriado.DescripcionColumn]));
+                    return ((string)(this[tableFeriado.DescripcionColumn]));
                 }
                 set {
-                    this[this.tableFeriado.DescripcionColumn] = value;
+                    this[tableFeriado.DescripcionColumn] = value;
                 }
             }
             
@@ -729,10 +729,10 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool Trasladable {
                 get {
-                    return ((bool)(this[this.tableFeriado.TrasladableColumn]));
+                    return ((bool)(this[tableFeriado.TrasladableColumn]));
                 }
                 set {
-                    this[this.tableFeriado.TrasladableColumn] = value;
+                    this[tableFeriado.TrasladableColumn] = value;
                 }
             }
             
@@ -740,10 +740,10 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string TipoNombre {
                 get {
-                    return ((string)(this[this.tableFeriado.TipoNombreColumn]));
+                    return ((string)(this[tableFeriado.TipoNombreColumn]));
                 }
                 set {
-                    this[this.tableFeriado.TipoNombreColumn] = value;
+                    this[tableFeriado.TipoNombreColumn] = value;
                 }
             }
             
@@ -751,10 +751,10 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string TipoDescripcion {
                 get {
-                    return ((string)(this[this.tableFeriado.TipoDescripcionColumn]));
+                    return ((string)(this[tableFeriado.TipoDescripcionColumn]));
                 }
                 set {
-                    this[this.tableFeriado.TipoDescripcionColumn] = value;
+                    this[tableFeriado.TipoDescripcionColumn] = value;
                 }
             }
         }
@@ -772,15 +772,15 @@ namespace ArgHolidays.MIFeriados {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public FeriadoRowChangeEvent(FeriadoRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
+                eventRow = row;
+                eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public FeriadoRow Row {
                 get {
-                    return this.eventRow;
+                    return eventRow;
                 }
             }
             
@@ -788,7 +788,7 @@ namespace ArgHolidays.MIFeriados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataRowAction Action {
                 get {
-                    return this.eventAction;
+                    return eventAction;
                 }
             }
         }
@@ -810,8 +810,8 @@ namespace ArgHolidays.MIFeriados {
         }
         
         public FeriadosEntreFechasRequest(System.DateTime d1, System.DateTime d2) {
-            this.d1 = d1;
-            this.d2 = d2;
+            d1 = d1;
+            d2 = d2;
         }
     }
     
@@ -829,7 +829,7 @@ namespace ArgHolidays.MIFeriados {
         }
         
         public FeriadosEntreFechasResponse(ArgHolidays.MIFeriados.FeriadoDS FeriadosEntreFechasResult) {
-            this.FeriadosEntreFechasResult = FeriadosEntreFechasResult;
+            FeriadosEntreFechasResult = FeriadosEntreFechasResult;
         }
     }
     
@@ -849,8 +849,8 @@ namespace ArgHolidays.MIFeriados {
         }
         
         public FeriadosEntreFechasAsXmlRequest(System.DateTime d1, System.DateTime d2) {
-            this.d1 = d1;
-            this.d2 = d2;
+            d1 = d1;
+            d2 = d2;
         }
     }
     
@@ -868,7 +868,7 @@ namespace ArgHolidays.MIFeriados {
         }
         
         public FeriadosEntreFechasAsXmlResponse(string FeriadosEntreFechasAsXmlResult) {
-            this.FeriadosEntreFechasAsXmlResult = FeriadosEntreFechasAsXmlResult;
+            FeriadosEntreFechasAsXmlResult = FeriadosEntreFechasAsXmlResult;
         }
     }
     

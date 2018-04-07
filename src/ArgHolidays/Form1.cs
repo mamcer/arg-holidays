@@ -7,19 +7,7 @@ namespace ArgHolidays
 {
     public partial class Form1 : Form
     {
-        MIFeriados.FeriadoDS _holidays;
-
-        public MIFeriados.FeriadoDS Holidays 
-        {
-            get 
-            {
-                return _holidays;
-            }
-            set
-            {
-                _holidays = value;
-            }
-        }
+        public MIFeriados.FeriadoDS Holidays { get; set; }
 
         public Form1()
         {
@@ -29,17 +17,12 @@ namespace ArgHolidays
             dtDate2.Value = today.AddMonths(6);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
             if (dataGridView1.CurrentRow != null)
             {
                 int id = (int)dataGridView1.CurrentRow.Cells[0].Value;
-                DataRow[] dr = Holidays.Feriado.Select(string.Format("ID={0}",id));
+                DataRow[] dr = Holidays.Feriado.Select($"ID={id}");
                 if (dr.Length > 0)
                 {
                     lblName.Text = dr[0][3].ToString();
@@ -51,16 +34,11 @@ namespace ArgHolidays
             }
         }
 
-        private void lblEffectiveDate_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnGo_Click(object sender, EventArgs e)
         {
             Cursor = Cursors.WaitCursor;
             pnlControls.Enabled = false;
-            MIFeriados.MyServiceClient client = new ArgHolidays.MIFeriados.MyServiceClient();
+            MIFeriados.MyServiceClient client = new MIFeriados.MyServiceClient();
             Holidays = client.FeriadosEntreFechas(dtDate1.Value, dtDate2.Value);
             if (Holidays.Feriado.Rows.Count > 0)
             {
@@ -70,7 +48,7 @@ namespace ArgHolidays
             dataGridView1.DataSource = Holidays.Feriado;
             pnlControls.Enabled = true;
             Cursor = Cursors.Default;
-            statusStrip1.Items[0].Text = string.Format("Total: {0} holidays", Holidays.Feriado.Rows.Count);
+            statusStrip1.Items[0].Text = $"Total: {Holidays.Feriado.Rows.Count} holidays";
         }
 
         private void lnkThisYear_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -112,7 +90,7 @@ namespace ArgHolidays
                     {
                         if (i != 5)
                         {
-                            sw.Write(dr[i].ToString() + ",");
+                            sw.Write(dr[i] + ",");
                         }
                     }
 

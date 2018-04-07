@@ -67,7 +67,7 @@
             // 
             // logoPictureBox
             // 
-            this.logoPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logoPictureBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.logoPictureBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.logoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoPictureBox.Image")));
             this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
@@ -77,7 +77,6 @@
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.logoPictureBox.TabIndex = 12;
             this.logoPictureBox.TabStop = false;
-            this.logoPictureBox.Click += new System.EventHandler(this.logoPictureBox_Click);
             // 
             // labelProductName
             // 
