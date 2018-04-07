@@ -5,11 +5,11 @@ using System.Windows.Forms;
 
 namespace ArgHolidays
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
         public MIFeriados.FeriadoDS Holidays { get; set; }
 
-        public Form1()
+        public Main()
         {
             InitializeComponent();
             DateTime today = DateTime.Today;
