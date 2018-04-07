@@ -10,6 +10,10 @@ ArgHolidays is a .NET Winforms application who connects to a now unexisting offi
 
 The source code was initially hosted in a TFS 2008. Later migrated to Visual Studio Team Services (TFS Online at that moment)
 
+## Screenshot
+
+[https://raw.githubusercontent.com/mamcer/arg-holidays/master/doc/screenshot.png]()
+
 ## Technologies
 
 - Visual Studio 2008
