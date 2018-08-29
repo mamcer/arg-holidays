@@ -6,7 +6,7 @@ In `original` branch you will find the original source code for this application
 
 ## Description
 
-ArgHolidays is a .NET Winforms application who connects to a now unexisting official Argentinian goverment WCF service and retrieved Argentinian holidays for a given period of time.
+ArgHolidays is a .NET Winforms application who connects to an (now unexisting) official Argentinian goverment WCF service to retrieve Argentinian holidays information for a given period of time.
 
 The source code was initially hosted in a TFS 2008. Later migrated to Visual Studio Team Services (TFS Online at that moment)
 
